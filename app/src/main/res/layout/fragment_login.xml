@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:id="@+id/submit_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fitsSystemWindows="true"
+                android:background="@android:color/transparent"
+                android:minHeight="56dp">
+
+            </android.support.v7.widget.Toolbar>
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fitsSystemWindows="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/itsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ITSC"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:inputType="textAutoComplete"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fitsSystemWindows="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:inputType="textPassword"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:fitsSystemWindows="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:text="Login"
+                android:background="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</FrameLayout>
